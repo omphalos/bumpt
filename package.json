@@ -1,0 +1,29 @@
+{
+  "name": "bumpt",
+  "version": "0.0.1",
+  "description": "CLI utility for package.json bump, npm publish, git tag and push",
+  "bin": "bumpt.js",
+  "main": "bumpt.js",
+  "scripts": {},
+  "keywords": [
+    "git",
+    "version",
+    "bump",
+    "package",
+    "package.json",
+    "npm",
+    "publish",
+    "push",
+    "origin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omphalos/bump"
+  },
+  "author": "omphalos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/omphalos/bump/issues"
+  },
+  "homepage": "https://github.com/omphalos/bump"
+}
