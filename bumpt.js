@@ -25,7 +25,7 @@ var commands = [
   'git commit -m "Bump version to ' + nextVersion + '"',
   'git tag ' + nextVersion,
   'git push origin HEAD',
-  'git push origin ' + version,
+  'git push origin ' + nextVersion,
   'npm publish'
 ]
 
