@@ -1,6 +1,6 @@
 {
   "name": "bumpt",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "CLI utility for package.json bump, npm publish, git tag and push",
   "bin": "bumpt.js",
   "main": "bumpt.js",
