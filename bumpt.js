@@ -18,23 +18,17 @@ if(isNaN(bumped)) {
 }
 
 packageJson.version = nextVersion
+console.log('writing package.json')
 fs.writeFileSync('./package.json', JSON.stringify(packageJson, null, '  '))
 
-var commands = [
-  'git add package.json',
-  'git commit -m "Bump version to ' + nextVersion + '"',
-  'git tag ' + nextVersion,
-  'git push origin HEAD',
-  'git push origin ' + nextVersion,
-  'npm publish'
-]
+run('git add package.json')
+run('git commit -m "Bump version to ' + nextVersion + '"')
+run('git tag ' + nextVersion)
+run('git push origin ' + nextVersion)
+run('git push origin HEAD')
+run('npm publish')
 
-;(function runNext() {
-  if(!commands.length) return console.log('Bumped to version ' + nextVersion)
-  childProcess.exec(commands.shift(), function(ex, out, err) {
-    if(err) console.error(err)
-    console.log(out)
-    if(ex) throw ex
-    runNext()
-  })
-})()
+function run(cmd) {
+  console.log('$', cmd)
+  childProcess.execSync(cmd)
+}
