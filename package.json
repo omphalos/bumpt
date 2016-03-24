@@ -18,12 +18,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/omphalos/bump"
+    "url": "https://github.com/omphalos/bumpt"
   },
   "author": "omphalos",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/omphalos/bump/issues"
+    "url": "https://github.com/omphalos/bumpt/issues"
   },
-  "homepage": "https://github.com/omphalos/bump"
+  "homepage": "https://github.com/omphalos/bumpt"
 }
